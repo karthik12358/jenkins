@@ -118,6 +118,4 @@ pipeline {
 - Supports **PR validation**, **feature branch workflows**, and **automatic cleanup**.
 - Easy to **set up** and **scale** for large repositories.
 
----
 
-This should help you understand and implement **Multibranch Pipelines** in Jenkins. 🚀 Let me know if you need further clarifications! 😊
