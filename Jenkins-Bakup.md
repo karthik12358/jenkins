@@ -107,6 +107,3 @@ You can create a Jenkins job to schedule backups.
 - **Test restores** regularly to ensure backups are working.
 - **Exclude logs and unnecessary files** to reduce backup size.
 
----
-
-This guide provides a complete backup and restore strategy for Jenkins. 🚀
