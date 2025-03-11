@@ -69,8 +69,10 @@ You can create a Jenkins job to schedule backups.
    sudo rm -rf $BACKUP_DIR
    ```
 4. **Schedule it** under **Build Triggers** using **Cron syntax**, e.g., `H 2 * * *` (runs at 2 AM daily).
-5. ```sudo visudo```
-6.    ```sudo visudo```
+5. ```bash
+6. sudo visudo```
+7.    ```bash
+7.jenkins ALL=(ALL) NOPASSWD: /bin/mkdir, /bin/cp, /bin/tar, /bin/rm```
 
 
 ## 3. Restoring a Backup
