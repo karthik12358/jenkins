@@ -63,12 +63,15 @@ You can create a Jenkins job to schedule backups.
    ```bash
    #!/bin/bash
    BACKUP_DIR="/backup/jenkins_auto_backup_$(date +%F)"
-   mkdir -p $BACKUP_DIR
-   cp -r /var/lib/jenkins/* $BACKUP_DIR
-   tar -czvf $BACKUP_DIR.tar.gz $BACKUP_DIR
-   rm -rf $BACKUP_DIR
+   sudo mkdir -p $BACKUP_DIR
+   sudo cp -r /var/lib/jenkins/* $BACKUP_DIR
+   sudo tar -czvf $BACKUP_DIR.tar.gz $BACKUP_DIR
+   sudo rm -rf $BACKUP_DIR
    ```
 4. **Schedule it** under **Build Triggers** using **Cron syntax**, e.g., `H 2 * * *` (runs at 2 AM daily).
+5. ```sudo visudo```
+6.    ```sudo visudo```
+
 
 ## 3. Restoring a Backup
 
