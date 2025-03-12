@@ -753,6 +753,18 @@ find / -name settings.xml
 
 --> click on job --> configure --> build --> clean deploy sonar:sonar --> save build now 
 
+how to integration tomact to jenkins and how to deploy war file in tomact
+.............................................................................
+got to plugins and install ......> deploy to conatiner
+
+click postbuilds and add war to ear click...........> add tomcat uname and creditionals 
+
+and add path of war file .
+and add tomcat version
+and save
+
+****if there is any error http 401,402 got to user-tomact.xml and add manager-script .....>> very important these line
+
 
 
 
